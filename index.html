@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafted By Jangir | Custom Doors, Wall Panels, Mandirs & Resin Art</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        jangirGold: {
+                            50: '#fdfbf7',
+                            100: '#f7f1e3',
+                            200: '#ede0c2',
+                            300: '#dfca99',
+                            400: '#cfb16f',
+                            500: '#b8974a',
+                            600: '#9a7b39',
+                            700: '#7b602e',
+                            800: '#644e27',
+                            900: '#534022',
+                        },
+                        jangirWood: {
+                            light: '#3d3226',
+                            DEFAULT: '#2a2219',
+                            dark: '#1a1510'
+                        }
+                    },
+                    fontFamily: {
+                        cinzel: ['Cinzel', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(26, 21, 16, 0.9) 0%, rgba(61, 50, 38, 0.8) 100%);
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2a2219;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #b8974a;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-jangirWood-dark font-sans text-stone-200 antialiased selection:bg-jangirGold-500 selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-jangirWood-dark text-jangirGold-300 text-xs sm:text-sm py-2.5 px-4 border-b border-jangirGold-500/20">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span><i class="fas fa-phone-alt text-jangirGold-400 mr-2"></i><a href="tel:7340316977" class="hover:text-white transition">+91 73403-16977</a></span>
+                <span class="hidden md:inline"><i class="fas fa-envelope text-jangirGold-400 mr-2"></i>craftedbyjangir@gmail.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="text-stone-400"><i class="fas fa-map-marker-alt text-jangirGold-400 mr-1"></i> Raisinghnagar | Custom Art Studio</span>
+                <div class="flex gap-3 text-jangirGold-400">
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-40 bg-jangirWood/95 backdrop-blur-md shadow-lg border-b border-jangirGold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-lg bg-jangirGold-500/20 flex items-center justify-center text-jangirGold-400 font-cinzel font-bold text-xl border border-jangirGold-500/40">
+                    CJ
+                </div>
+                <div>
+                    <span class="font-cinzel font-bold text-lg sm:text-2xl text-white tracking-wider block">CRAFTED BY JANGIR</span>
+                    <span class="text-[10px] tracking-widest text-jangirGold-400 uppercase font-semibold block -mt-1">Doors | Panels | Mandirs | Resin Art</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden lg:flex items-center gap-8 font-medium text-sm text-stone-300">
+                <a href="#home" class="hover:text-jangirGold-400 transition">Home</a>
+                <a href="#about" class="hover:text-jangirGold-400 transition">Our Studio</a>
+                <a href="#collections" class="hover:text-jangirGold-400 transition">Collections</a>
+                <a href="#craftsmanship" class="hover:text-jangirGold-400 transition">Craftsmanship</a>
+                <a href="#contact" class="hover:text-jangirGold-400 transition">Custom Order</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-4">
+                <a href="https://wa.me/917340316977" target="_blank" class="bg-jangirGold-500 hover:bg-jangirGold-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md transition flex items-center gap-2">
+                    <i class="fab fa-whatsapp"></i> WhatsApp Inquiry
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-btn" class="lg:hidden text-jangirGold-300 text-2xl focus:outline-none">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-jangirWood border-b border-jangirGold-500/20 px-6 py-4 space-y-3 font-medium text-stone-300">
+            <a href="#home" class="block hover:text-jangirGold-400 py-1">Home</a>
+            <a href="#about" class="block hover:text-jangirGold-400 py-1">Our Studio</a>
+            <a href="#collections" class="block hover:text-jangirGold-400 py-1">Collections</a>
+            <a href="#craftsmanship" class="block hover:text-jangirGold-400 py-1">Craftsmanship</a>
+            <a href="#contact" class="block hover:text-jangirGold-400 py-1">Custom Order</a>
+            <div class="pt-2">
+                <a href="https://wa.me/917340316977" target="_blank" class="w-full bg-jangirGold-500 text-white text-center py-2.5 rounded-full font-semibold block">
+                    <i class="fab fa-whatsapp mr-2"></i> WhatsApp Inquiry
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-[85vh] flex items-center justify-center bg-jangirWood-dark overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1920" alt="Luxury Woodwork and Resin Art" class="w-full h-full object-cover object-center opacity-30 transform scale-105 animate-pulse duration-10000">
+            <div class="absolute inset-0 hero-gradient"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center py-20">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-jangirGold-500/20 text-jangirGold-300 border border-jangirGold-400/30 text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 backdrop-blur-sm">
+                Exquisite Handcrafted Interior Masterpieces
+            </span>
+            <h1 class="font-cinzel text-4xl sm:text-6xl lg:text-7xl font-bold text-white tracking-wide mb-6 leading-tight">
+                Crafting Elegance in <span class="text-jangirGold-400">Doors, Panels & Resin Art</span>
+            </h1>
+            <p class="text-stone-300 text-base sm:text-xl max-w-3xl mx-auto font-light mb-10 leading-relaxed">
+                Transform your living spaces with bespoke carved wooden doors, designer wall panels, sacred home mandirs, and stunning contemporary resin art crafted with absolute precision.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#collections" class="w-full sm:w-auto bg-jangirGold-500 hover:bg-jangirGold-600 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition duration-300 text-center">
+                    Explore Collections
+                </a>
+                <a href="https://wa.me/917340316977?text=Hello%20Crafted%20By%20Jangir,%20I%20would%20like%20to%20discuss%20a%20custom%20interior%20art%20commission." target="_blank" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/30 font-semibold px-8 py-4 rounded-full backdrop-blur-sm transition duration-300 text-center flex items-center justify-center gap-2">
+                    <i class="fab fa-whatsapp text-green-400 text-lg"></i> Direct WhatsApp Chat
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16 pt-12 border-t border-white/10 text-center">
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-jangirGold-400 block mb-1">200+</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Custom Projects</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-jangirGold-400 block mb-1">100%</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Handcrafted Art</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-jangirGold-400 block mb-1">Bespoke</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Custom Designs</span>
+                </div>
+                <div>
+                    <span class="font-cinzel text-3xl sm:text-4xl font-bold text-jangirGold-400 block mb-1">Pan India</span>
+                    <span class="text-stone-400 text-xs sm:text-sm tracking-wider uppercase">Safe Delivery</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-jangirWood">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-jangirGold-500/30">
+                    <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=1000" alt="Crafted By Jangir Studio" class="w-full h-[480px] object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 z-20 bg-jangirWood-dark text-white p-6 rounded-2xl shadow-xl hidden sm:block border border-jangirGold-400/30 max-w-xs">
+                    <span class="font-cinzel text-jangirGold-400 text-xl font-bold block mb-1">Raisinghnagar Studio</span>
+                    <span class="text-xs text-stone-300 uppercase tracking-wider block">Master Wood & Resin Artisans</span>
+                </div>
+                <div class="absolute -top-6 -left-6 w-48 h-48 bg-jangirGold-500/10 rounded-full -z-10 blur-2xl opacity-70"></div>
+            </div>
+            <div class="space-y-6">
+                <span class="text-jangirGold-400 font-semibold uppercase tracking-widest text-sm block">Our Heritage & Passion</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    Blending Traditional Woodwork with Modern Resin Art
+                </h2>
+                <p class="text-stone-300 leading-relaxed font-light text-base sm:text-lg">
+                    At <strong>Crafted By Jangir</strong>, located in Raisinghnagar, we specialize in breathing life into interiors. From intricately carved heavy wooden doors and statement wall panels to sacred home mandirs and mesmerizing river resin art tables, our creations are a testament to superior craftsmanship and artistic vision.
+                </p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                    <div class="flex items-start gap-3 bg-jangirWood-dark p-4 rounded-xl border border-jangirGold-500/20">
+                        <div class="text-jangirGold-400 text-xl mt-1"><i class="fas fa-door-open"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Architectural Doors</h4>
+                            <p class="text-stone-400 text-xs sm:text-sm">Solid teak and engineered wood doors with custom CNC and hand carvings.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3 bg-jangirWood-dark p-4 rounded-xl border border-jangirGold-500/20">
+                        <div class="text-jangirGold-400 text-xl mt-1"><i class="fas fa-palette"></i></div>
+                        <div>
+                            <h4 class="font-bold text-white mb-1">Contemporary Resin Art</h4>
+                            <p class="text-stone-400 text-xs sm:text-sm">Exquisite epoxy resin wall art, ocean tables, and custom decor accents.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section id="collections" class="py-20 px-4 sm:px-6 lg:px-8 bg-jangirWood-dark">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-jangirGold-400 font-semibold uppercase tracking-widest text-sm block mb-2">Our Masterpieces</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-4">Doors, Panels, Mandirs & Resin Art</h2>
+                <p class="text-stone-300 font-light text-base sm:text-lg">Explore our bespoke product lines crafted to elevate luxury homes, villas, and commercial spaces.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Designer Wooden Doors" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Woodwork</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Designer Wooden Doors</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Grand main entrance doors and interior room doors featuring traditional motifs, CNC precision cuts, and rich polish finishes.</p>
+                        </div>
+                        <button onclick="openInquiry('Designer Wooden Doors')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=80&w=800" alt="Wall Panels" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Interior Panels</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Luxury Wall Panels</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Statement fluted panels, acoustic wooden wall cladding, and 3D carved decorative panels designed for modern living rooms and offices.</p>
+                        </div>
+                        <button onclick="openInquiry('Luxury Wall Panels')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800" alt="Home Mandir" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Sacred Art</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Divine Home Mandirs</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Exquisitely crafted wooden temples for homes featuring intricate jali doors, dome structures, storage drawers, and integrated LED backlighting.</p>
+                        </div>
+                        <button onclick="openInquiry('Divine Home Mandirs')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&q=80&w=800" alt="Resin Art Masterpieces" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Resin Art</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Contemporary Resin Art</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Mesmerizing epoxy resin wall clocks, ocean geode art pieces, river dining tables, and luxury serving trays with metallic gold accents.</p>
+                        </div>
+                        <button onclick="openInquiry('Contemporary Resin Art')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1538688525198-9b88f6f53126?auto=format&fit=crop&q=80&w=800" alt="CNC Jali Partitions" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Jali Partitions</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">CNC Jali & Room Dividers</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Elegant wooden jali screens and partitions for space segregation in living areas, offices, and hotels with flawless geometrical patterns.</p>
+                        </div>
+                        <button onclick="openInquiry('CNC Jali & Room Dividers')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="bg-jangirWood rounded-2xl overflow-hidden shadow-xl border border-jangirGold-500/20 hover:border-jangirGold-500/50 transition duration-300 flex flex-col group">
+                    <div class="relative h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=800" alt="Custom Furniture" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-jangirWood-dark/80 via-transparent to-transparent"></div>
+                        <span class="absolute top-4 left-4 bg-jangirWood/90 text-jangirGold-300 text-xs font-semibold px-3 py-1 rounded-full backdrop-blur-sm border border-jangirGold-500/30">Customized</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="font-cinzel text-xl font-bold text-white mb-2">Custom Interior Solutions</h3>
+                            <p class="text-stone-300 text-sm font-light mb-6 leading-relaxed">Have a unique design in mind? Share your reference photos or dimensions, and we will custom-craft it to perfection for your home.</p>
+                        </div>
+                        <button onclick="openInquiry('Custom Interior Solutions')" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white py-3 rounded-xl font-semibold text-sm transition flex items-center justify-center gap-2">
+                            <i class="fab fa-whatsapp text-green-300"></i> Enquire Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Craftsmanship Process Section -->
+    <section id="craftsmanship" class="py-20 bg-jangirWood px-4 sm:px-6 lg:px-8 border-t border-b border-jangirGold-500/20">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-jangirGold-400 font-semibold uppercase tracking-widest text-sm block mb-2">Our Process</span>
+                <h2 class="font-cinzel text-3xl sm:text-5xl font-bold text-white mb-4">How We Bring Ideas to Life</h2>
+                <p class="text-stone-300 font-light text-base sm:text-lg">A meticulous journey from your concept to flawless installation.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="bg-jangirWood-dark p-8 rounded-2xl border border-jangirGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-jangirGold-500/40">01</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Consultation</h3>
+                    <p class="text-stone-400 text-sm font-light">Share your dimensions, design inspiration, and requirements via WhatsApp or call.</p>
+                </div>
+                <div class="bg-jangirWood-dark p-8 rounded-2xl border border-jangirGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-jangirGold-500/40">02</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Design & Crafting</h3>
+                    <p class="text-stone-400 text-sm font-light">Expert woodworking, precision CNC carving, and hand-poured resin art production.</p>
+                </div>
+                <div class="bg-jangirWood-dark p-8 rounded-2xl border border-jangirGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-jangirGold-500/40">03</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Finishing & Polish</h3>
+                    <p class="text-stone-400 text-sm font-light">Multi-coat PU polish, protective coatings, and mirror-gloss finishing on resin pieces.</p>
+                </div>
+                <div class="bg-jangirWood-dark p-8 rounded-2xl border border-jangirGold-500/20 text-center relative">
+                    <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center font-cinzel font-bold text-xl mx-auto mb-4 border border-jangirGold-500/40">04</div>
+                    <h3 class="font-cinzel text-lg font-bold text-white mb-2">Secure Delivery</h3>
+                    <p class="text-stone-400 text-sm font-light">Carefully packaged and safely delivered to your doorstep anywhere in India.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-jangirWood-dark">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <span class="text-jangirGold-400 font-semibold uppercase tracking-widest text-sm block">Get in Touch</span>
+                <h2 class="font-cinzel text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
+                    Start Your Custom Interior Project Today
+                </h2>
+                <p class="text-stone-300 font-light leading-relaxed">
+                    Looking for a custom carved door, wall panel, home mandir, or resin art piece? Contact us directly for quotations, design advice, and catalog sharing.
+                </p>
+
+                <div class="space-y-4 pt-4">
+                    <div class="flex items-center gap-4 bg-jangirWood p-4 rounded-xl shadow-sm border border-jangirGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">Call Us Directly</span>
+                            <a href="tel:7340316977" class="font-bold text-white text-lg hover:text-jangirGold-400 transition">+91 73403-16977</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-jangirWood p-4 rounded-xl shadow-sm border border-jangirGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-green-500/20 text-green-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">WhatsApp Chat</span>
+                            <a href="https://wa.me/917340316977" target="_blank" class="font-bold text-white text-lg hover:text-green-400 transition">+91 73403-16977</a>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center gap-4 bg-jangirWood p-4 rounded-xl shadow-sm border border-jangirGold-500/20">
+                        <div class="w-12 h-12 rounded-full bg-jangirGold-500/20 text-jangirGold-400 flex items-center justify-center text-xl font-bold flex-shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-stone-400 uppercase tracking-wider block">Email Address</span>
+                            <span class="font-bold text-white text-base">craftedbyjangir@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <div class="bg-jangirWood p-8 rounded-2xl shadow-xl border border-jangirGold-500/20">
+                <h3 class="font-cinzel text-2xl font-bold text-white mb-6">Custom Work Inquiry</h3>
+                <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Your Full Name</label>
+                        <input type="text" id="form-name" required class="w-full bg-jangirWood-dark border border-jangirGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-jangirGold-500 transition" placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Phone Number</label>
+                        <input type="tel" id="form-phone" required class="w-full bg-jangirWood-dark border border-jangirGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-jangirGold-500 transition" placeholder="Enter phone number">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Product Category</label>
+                        <select id="form-product" class="w-full bg-jangirWood-dark border border-jangirGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-jangirGold-500 transition">
+                            <option value="Designer Wooden Doors">Designer Wooden Doors</option>
+                            <option value="Luxury Wall Panels">Luxury Wall Panels</option>
+                            <option value="Divine Home Mandirs">Divine Home Mandirs</option>
+                            <option value="Contemporary Resin Art">Contemporary Resin Art</option>
+                            <option value="CNC Jali & Room Dividers">CNC Jali & Room Dividers</option>
+                            <option value="Custom Interior Solutions">Custom Interior Solutions</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-stone-300 mb-1">Project Details & Dimensions</label>
+                        <textarea id="form-message" rows="4" class="w-full bg-jangirWood-dark border border-jangirGold-500/30 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-jangirGold-500 transition" placeholder="Describe your design vision, dimensions, or custom requirements..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-jangirGold-500 hover:bg-jangirGold-600 text-white font-semibold py-4 rounded-xl shadow-lg transition duration-300 flex items-center justify-center gap-2">
+                        <i class="fab fa-whatsapp text-lg"></i> Send Inquiry via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-jangirWood-dark text-stone-400 py-12 px-4 sm:px-6 lg:px-8 border-t border-jangirGold-500/20">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-jangirGold-500 flex items-center justify-center text-jangirWood-dark font-cinzel font-bold text-lg">
+                        CJ
+                    </div>
+                    <span class="font-cinzel font-bold text-white text-xl tracking-wider">CRAFTED BY JANGIR</span>
+                </div>
+                <p class="text-sm font-light leading-relaxed">
+                    Specializing in custom carved wooden doors, luxury wall panels, home mandirs, and stunning contemporary resin art. Raisinghnagar, India.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#home" class="hover:text-jangirGold-400 transition">Home</a></li>
+                    <li><a href="#about" class="hover:text-jangirGold-400 transition">Our Studio</a></li>
+                    <li><a href="#collections" class="hover:text-jangirGold-400 transition">Collections</a></li>
+                    <li><a href="#craftsmanship" class="hover:text-jangirGold-400 transition">Process</a></li>
+                    <li><a href="#contact" class="hover:text-jangirGold-400 transition">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Collections</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="hover:text-jangirGold-400 transition cursor-pointer" onclick="openInquiry('Designer Wooden Doors')">Wooden Doors</span></li>
+                    <li><span class="hover:text-jangirGold-400 transition cursor-pointer" onclick="openInquiry('Luxury Wall Panels')">Wall Panels</span></li>
+                    <li><span class="hover:text-jangirGold-400 transition cursor-pointer" onclick="openInquiry('Divine Home Mandirs')">Home Mandirs</span></li>
+                    <li><span class="hover:text-jangirGold-400 transition cursor-pointer" onclick="openInquiry('Contemporary Resin Art')">Resin Art</span></li>
+                    <li><span class="hover:text-jangirGold-400 transition cursor-pointer" onclick="openInquiry('CNC Jali & Room Dividers')">Jali Partitions</span></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-cinzel text-white font-bold text-base mb-4 tracking-wider">Contact Info</h4>
+                <ul class="space-y-3 text-sm">
+                    <li><i class="fas fa-phone-alt text-jangirGold-400 mr-2"></i> <a href="tel:7340316977" class="hover:text-white">+91 73403-16977</a></li>
+                    <li><i class="fab fa-whatsapp text-green-400 mr-2"></i> <a href="https://wa.me/917340316977" target="_blank" class="hover:text-white">+91 73403-16977</a></li>
+                    <li><i class="fas fa-envelope text-jangirGold-400 mr-2"></i> craftedbyjangir@gmail.com</li>
+                    <li><i class="fas fa-map-marker-alt text-jangirGold-400 mr-2"></i> Raisinghnagar, India</li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto pt-8 border-t border-jangirGold-500/10 text-center text-xs text-stone-500">
+            &copy; 2026 Crafted By Jangir. All Rights Reserved. Designed for Luxury Interior Spaces.
+        </div>
+    </footer>
+
+    <!-- Fixed Floating Action Buttons (15-20% smaller, polished, functional) -->
+    <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-2.5 items-end">
+        <!-- Call Button -->
+        <a href="tel:7340316977" aria-label="Call Crafted By Jangir" class="w-11 h-11 bg-blue-600 hover:bg-blue-700 text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+            </svg>
+            <span class="absolute right-14 bg-jangirWood-dark text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-jangirGold-500/20 pointer-events-none">
+                Call Us
+            </span>
+        </a>
+
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/917340316977?text=Hello%20Crafted%20By%20Jangir,%20I%20would%20like%20to%20inquire%20about%20your%20doors,%20wall%20panels,%20mandirs,%20and%20resin%20art." target="_blank" aria-label="WhatsApp Crafted By Jangir" class="w-11 h-11 bg-[#25D366] hover:bg-[#20ba5a] text-white rounded-full shadow-lg flex items-center justify-center transition-all duration-300 hover:scale-110 group relative">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span class="absolute right-14 bg-jangirWood-dark text-white text-[11px] font-medium py-1 px-2.5 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md border border-jangirGold-500/20 pointer-events-none">
+                WhatsApp Us
+            </span>
+        </a>
+    </div>
+
+    <!-- JavaScript functionality -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Quick inquiry function
+        function openInquiry(productName) {
+            const phoneNumber = "917340316977";
+            const message = encodeURIComponent(`Hello Crafted By Jangir, I am interested in your "${productName}". Please share details, pricing, and catalog.`);
+            window.open(`https://wa.me/${phoneNumber}?text=${message}`, '_blank');
+        }
+
+        // Form submission via WhatsApp
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const product = document.getElementById('form-product').value;
+            const message = document.getElementById('form-message').value;
+
+            const whatsappNumber = "917340316977";
+            const text = encodeURIComponent(`New Custom Order Inquiry:\n\nName: ${name}\nPhone: ${phone}\nCategory: ${product}\nDetails: ${message}`);
+            
+            window.open(`https://wa.me/${whatsappNumber}?text=${text}`, '_blank');
+        }
+    </script>
+</body>
+</html>
